@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Galeria de Usuários</h1>
+        <div class="search-container">
+            <input type="text" id="searchIdInput" placeholder="Buscar por ID">
+            <button id="searchIdButton">Buscar ID</button>
+            <input type="text" id="searchNameInput" placeholder="Buscar por Nome">
+            <button id="searchNameButton">Buscar Nome</button>
+            <button id="fetchButton">Buscar todos os usuários</button>
+        </div>
+        <div class="add-user-container">
+            <h2>Adicionar Novo Usuário</h2>
+            <!-- Removido o campo ID -->
+            <input type="text" id="newUserName" placeholder="Nome">
+            <input type="email" id="newUserEmail" placeholder="Email">
+            <button id="addUserButton">Adicionar Usuário</button>
+        </div>
+        <div id="gallery"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
